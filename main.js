@@ -3,10 +3,6 @@ const http = require('http');
 const hostname = '0.0.0.0';
 const port = 8080;
 
-if (process.env.ENVIRONMENT === 'prod') {
-    process.exit(1);
-}
-
 console.log(process.env.ENVIRONMENT || 'e2e');
 
 const server = http.createServer((_, res) => {
