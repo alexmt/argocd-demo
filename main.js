@@ -8,7 +8,7 @@ console.log(process.env.ENVIRONMENT || 'e2e');
 const server = http.createServer((_, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello, World. Updated!\n');
+  res.end('Hello, World!\n');
 });
 
 server.listen(port, hostname, () => {
